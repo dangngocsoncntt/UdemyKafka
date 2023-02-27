@@ -26,7 +26,7 @@ public class LibraryEventProducer {
     @Autowired
     ObjectMapper objectMapper;
 
-    String topic = "library-events1";
+    String topic = "library-events";
 
     public void sendLibraryEvent(LibraryEvent libraryEvent) throws JsonProcessingException{
         Integer key = libraryEvent.getLibraryEventId();
